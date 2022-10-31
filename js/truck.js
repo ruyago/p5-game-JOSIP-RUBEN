@@ -1,8 +1,8 @@
 class Truck {
 	constructor(){
 		this.truck
-        this.y = 100
-        this.speed = Math.random()*3
+        this.y = 1
+        this.speed = Math.random()*5
         this.x = 200
        
        

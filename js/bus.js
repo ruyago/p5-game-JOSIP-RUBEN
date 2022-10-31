@@ -1,7 +1,7 @@
 class Bus {
 	constructor(){
 		this.bus
-        this.y = 100
+        this.y = 1
         this.speed = Math.random()*3
         this.x = 400
        
