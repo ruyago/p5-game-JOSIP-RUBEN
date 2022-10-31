@@ -21,6 +21,13 @@ class Car {
     moveLeft() {
         this.x -= 180
     }
+
+    moveUp() {
+        this.y -= 180
+    }
+    moveDown() {
+        this.y -= -180
+    }
 }
 
     function keyPressed() {
@@ -32,6 +39,16 @@ class Car {
         if (keyCode === 37) {
             game.car.moveLeft()
         }
+
+        if (keyCode === 38) {
+            console.log("top")
+            game.car.moveUp()
+        }
+    
+        if (keyCode === 40) {
+            game.car.moveDown()
+        }
+    
     
 
 
