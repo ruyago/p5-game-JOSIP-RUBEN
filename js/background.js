@@ -1,21 +1,22 @@
 class Background {
-    draw() {
-        /*game.backgroundImages.forEach(function(img) {
-            img.x -= img.speed
-            image(img.src, img.x, 0, width, height)
-            image(img.src, img.x + width, 0, width, height)
-            if (img.x <= -width) img.x = 0
-        })*/
-    }
-}
-    this.background = new Background()
-        
-    
-    preload() {
-        this.background = [
-            { src: loadImage("../assets/background/road.png"), x: 0, speed: 0 },
-            { src: loadImage("../assets/background/road.png"), x: 0, speed: 0 }
-           
-        ]
+	constructor(){
+		 this.backgroundImage
+		this. x = 0
+		this.y=0
+		this.velocity = -1
 
-    }
+	}
+
+	preload() {
+		this.backgroundImage = loadImage("../assets/background/road.png")
+		}
+
+	draw() {
+      clear()
+		console.log(this.y)
+		this.y-= this.velocity
+		image(this.backgroundImage, this.x , this.y , 800, 400)
+		
+		
+	}
+}

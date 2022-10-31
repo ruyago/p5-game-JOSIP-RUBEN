@@ -1,10 +1,13 @@
+
 class Game {
-	constructor() 
-     this.car = new Car() 
-      this.background = new.background()
-       this.backgroundImages
+	constructor() {
+   //  this.car = new Car() 
+      this.background = new Background()
        this.createImage
        this.obstacles 
-}
+     }
 
-console.log('a cosmetic change')
+    
+
+
+}
