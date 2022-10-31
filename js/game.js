@@ -6,7 +6,7 @@ class Game {
       this.bus = new Bus() 
       this.truck = new Truck() 
       this.bike = new Bike() 
-       this.carImage
+     this.carImage
         
        
 
