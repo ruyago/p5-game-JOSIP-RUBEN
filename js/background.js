@@ -12,8 +12,9 @@ class Background {
         
     
     preload() {
-        this.backgroundImages = [
+        this.background = [
             { src: loadImage("../assets/background/road.png"), x: 0, speed: 0 },
+            { src: loadImage("../assets/background/road.png"), x: 0, speed: 0 }
            
         ]
 

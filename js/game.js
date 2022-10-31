@@ -7,3 +7,4 @@ class Game {
        this.obstacles 
 }
 
+console.log('a cosmetic change')
