@@ -14,13 +14,11 @@ class Background {
 
 	draw() {
 		
-
+		
 		this.y-= this.velocity
 		image(this.backgroundImage, this.x , this.y , 900, 900)
 		image(this.backgroundImage, this.x , this.y - 900, 900, 900);
 		
-
-
 
 
 		}

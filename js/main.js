@@ -8,14 +8,18 @@ function setup() {
 
     game.background.preload()
     game.car.preload()
-    game.obstacles.preload()
+    game.bus.preload()
+    game.truck.preload()
+    game.bike.preload()
  }
 
 
  function draw() {
     game.background.draw()
     game.car.draw()
-    game.obstacles.draw()
+    game.bus.draw()
+    game.truck.draw()
+    game.bike.draw()
    
 
  }
