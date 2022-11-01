@@ -2,7 +2,7 @@ class Car {
 	constructor(){
 		 this.carImage
 		this. x = 420
-        this. y = 650
+        this. y = 750
 	}
 
 	preload() {
@@ -29,13 +29,12 @@ class Car {
 
     moveUp() {
         
-        if (this.y > 0 && this.y < 900){
+        if (this.y > 120){
         this.y -= 180}
     }
 
     moveDown() {
-
-        if (this.y > 0 && this.y < 900){
+        if (this.y < 750){
         this.y -= -180}
     }
 }
