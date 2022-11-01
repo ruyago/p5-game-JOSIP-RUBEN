@@ -15,18 +15,28 @@ class Car {
     }
 
     moveRight() {
+       if (this.x < 600){
         this.x += 180
+       } 
     }
 
     moveLeft() {
+        
+        if (this.x > 250){
         this.x -= 180
+    }
     }
 
     moveUp() {
-        this.y -= 180
+        
+        if (this.y > 0 && this.y < 900){
+        this.y -= 180}
     }
+
     moveDown() {
-        this.y -= -180
+
+        if (this.y > 0 && this.y < 900){
+        this.y -= -180}
     }
 }
 
@@ -34,6 +44,7 @@ class Car {
         if (keyCode === 39) {
             console.log("right")
             game.car.moveRight()
+            
         }
     
         if (keyCode === 37) {
