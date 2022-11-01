@@ -3,6 +3,7 @@ class Car {
 		 this.carImage
 		this. x = 420
         this. y = 750
+        this.lifes = 10
 	}
 
 	preload() {
@@ -11,7 +12,7 @@ class Car {
 		}
 
 	draw() {
-		image(this.carImage, this.x , this.y , 90, 90)    
+		image(this.carImage, this.x , this.y , 90, 130)    
     }
 
     moveRight() {
