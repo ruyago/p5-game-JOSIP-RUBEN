@@ -2,8 +2,8 @@ class Truck {
 	constructor(){
 		this.truck
         this.y = 1
-        this.speed = Math.random()*5
-        this.x = 200
+        this.speed = Math.random()*7
+        this.x = 220
        
        
 		
@@ -27,8 +27,12 @@ class Truck {
 
         // reset 
         if (this.y >= 900) {
-        this.y = 100;
+        this.y = 1;
                          
+        }
+
+       if (dist(this.x, this.y, game.car.x, game.car.y) < 25){
+         noLoop()
         }
         
 }

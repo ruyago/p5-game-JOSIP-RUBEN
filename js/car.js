@@ -16,26 +16,26 @@ class Car {
 
     moveRight() {
        if (this.x < 600){
-        this.x += 180
+        this.x += 190
        } 
     }
 
     moveLeft() {
         
         if (this.x > 250){
-        this.x -= 180
+        this.x -= 190
     }
     }
 
     moveUp() {
         
         if (this.y > 120){
-        this.y -= 180}
+        this.y -= 190}
     }
 
     moveDown() {
         if (this.y < 750){
-        this.y -= -180}
+        this.y -= -190}
     }
 }
 

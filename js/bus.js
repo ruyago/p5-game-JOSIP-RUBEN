@@ -1,8 +1,10 @@
+let lifes = 3;
+
 class Bus {
 	constructor(){
 		this.bus
         this.y = 1
-        this.speed = Math.random()*3
+        this.speed = Math.random()*6
         this.x = 400
        
 		
@@ -26,13 +28,30 @@ class Bus {
 
         // reset 
         if (this.y >= 900) {
-        this.y = 100;
+        this.y = 1;
                          
         }
         
-}
 
-}
+        if (dist(this.x, this.y, game.car.x, game.car.y) < 25){
+          
+          noLoop()
+           console.log(lifes)
+           
+       }
+    
+    
+    
+    
+    }
+
+  
+
+
+    }
+
+
+
 
 
 

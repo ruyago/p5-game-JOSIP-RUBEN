@@ -1,10 +1,33 @@
+const counter1 = document.getElementById('counter');
+
+
+/*let numberStart = 0;
+
+let countdown = setInterval(update2, 1000) 
+
+function update2() {
+	numberStart++
+
+	 if(numberStart === 7100){
+	 	clearInterval(countdown);
+		alert('game stop');
+	}
+
+
+
+	counter1.innerText  = numberStart;
+  }
+*/
+
+
+console.log(counter1);
+
 class Background {
 	constructor(){
-		 this.backgroundImage
+		this.backgroundImage
 		this. x = 0
-		this.y=0
+		this.y= 0
 		this.velocity = -10
-
 	}
 
 	preload() {
@@ -24,6 +47,9 @@ class Background {
 			this.y = 0
 		}
 		
+
+		counter1.innerText  = Math.floor(frameCount / 30);
+	
 
 
 		}
