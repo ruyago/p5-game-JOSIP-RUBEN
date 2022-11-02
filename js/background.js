@@ -12,7 +12,7 @@ class Background {
 	preload() {
 		this.backgroundImage = loadImage("../assets/background/road.png")
 	
-		
+		remove.image
 		}
 
 	draw() {
