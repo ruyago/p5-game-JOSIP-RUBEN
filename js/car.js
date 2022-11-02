@@ -1,18 +1,30 @@
+let mySound;
 class Car {
 	constructor(){
-		 this.carImage
+		this.carImage
 		this. x = 420
         this. y = 750
         this.lifes = 10
+        this.mySound 
+        
 	}
 
 	preload() {
 		this.carImage = loadImage("../assets/background/car.png")
+        this.mySound = loadSound('../assets/background/car.mp3');
 		
 		}
 
 	draw() {
-		image(this.carImage, this.x , this.y , 90, 130)    
+		image(this.carImage, this.x , this.y , 90, 130)
+
+        
+        if (keyCode === 39) {
+            console.log("right")
+            game.car.mySound.play()
+            
+        }
+
     }
 
     moveRight() {
@@ -40,30 +52,28 @@ class Car {
     }
 }
 
-    function keyPressed() {
-        if (keyCode === 39) {
-            console.log("right")
-            game.car.moveRight()
-            
-        }
-    
-        if (keyCode === 37) {
-            game.car.moveLeft()
-        }
+function keyPressed() {
+    if (keyCode === 39) {
+        console.log("right")
+        game.car.moveRight()
+        
+    }
 
-        if (keyCode === 38) {
-            console.log("top")
-            game.car.moveUp()
-        }
-    
-        if (keyCode === 40) {
-            game.car.moveDown()
-        }
-    
-    
+    if (keyCode === 37) {
+        game.car.moveLeft()
+    }
 
+    if (keyCode === 38) {
+        console.log("top")
+        game.car.moveUp()
+    }
+
+    if (keyCode === 40) {
+        game.car.moveDown()
+    }
+    
+  
 
 
 }
-
     

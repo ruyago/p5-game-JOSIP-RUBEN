@@ -5,15 +5,32 @@ body {
     flex-direction: column;
     font-family: sans-serif;
 
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #ee7752, #d6ec73, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
 
-h1{
+#title{
 
-    font-size: 60;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 60px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    
+}
+
+#marcador{
+    padding: 20px;
+    font-weight: 600;
+    font-size: 60px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+   
 }
 
 

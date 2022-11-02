@@ -7,8 +7,7 @@ class Game {
       this.truck = new Truck() 
       this.bike = new Bike() 
       this.carImage
-        
-       
+    
 
      }
 

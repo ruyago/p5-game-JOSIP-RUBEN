@@ -1,27 +1,5 @@
 const counter1 = document.getElementById('counter');
 
-
-/*let numberStart = 0;
-
-let countdown = setInterval(update2, 1000) 
-
-function update2() {
-	numberStart++
-
-	 if(numberStart === 7100){
-	 	clearInterval(countdown);
-		alert('game stop');
-	}
-
-
-
-	counter1.innerText  = numberStart;
-  }
-*/
-
-
-console.log(counter1);
-
 class Background {
 	constructor(){
 		this.backgroundImage
@@ -32,6 +10,7 @@ class Background {
 
 	preload() {
 		this.backgroundImage = loadImage("../assets/background/road.png")
+	
 		
 		}
 

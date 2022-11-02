@@ -13,8 +13,7 @@ class Truck {
 	preload() {
 
 		this.truck = loadImage("../assets/background/truck.png")
-       
-  
+    
 		
 		}
 
@@ -28,6 +27,7 @@ class Truck {
         // reset 
         if (this.y >= 900) {
         this.y = 1;
+        this.speed = Math.random()*6 + 1
                          
         }
 

@@ -28,6 +28,7 @@ class Bike {
         // reset 
        if (this.y >= 900) {
         this.y = 1;
+        this.speed = Math.random()*6 + 1
                          
         }
         
@@ -42,14 +43,14 @@ class Bike {
         
         
         }
-        if (counter1.innerText == 7000){
+       /* if (counter1.innerText == 7000){
             ellipse(450, 400, 500, 500)
             strokeWeight(33)
             textSize(72);
             textFont('Georgia');
             text('World Cup', 230, 420);
             //noLoop()
-         }
+         }*/
 }
 
 
