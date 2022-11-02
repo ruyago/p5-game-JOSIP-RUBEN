@@ -48,7 +48,7 @@ class Background {
 		}
 		
 
-		counter1.innerText  = Math.floor(frameCount*20);
+		counter1.innerText  = Math.floor(frameCount*2);
 	 
 
 

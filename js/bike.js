@@ -38,11 +38,7 @@ class Bike {
             textSize(72);
             textFont('Georgia');
             text('GAME OVER', 230, 420);
-           
-           
-            
-            
-         // noLoop()
+             noLoop()
         
         
         }
@@ -52,7 +48,7 @@ class Bike {
             textSize(72);
             textFont('Georgia');
             text('World Cup', 230, 420);
-          //  noLoop()
+            //noLoop()
          }
 }
 

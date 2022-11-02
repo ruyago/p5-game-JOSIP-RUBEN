@@ -17,9 +17,9 @@ class Bus {
 	constructor(){
 		this.bus
         this.y = 0
-        this.speed = Math.random()*6
+        this.speed = Math.random()*7
         this.x = 400
-       this.flag
+    
 		
 
 	}
@@ -53,7 +53,7 @@ class Bus {
 
         // reset 
         if (this.y >= 900) {
-            this.y = 0  
+            this.y = 1  
             
         }
        
@@ -67,7 +67,7 @@ class Bus {
             text('GAME OVER', 230, 420);
            
         
-          //noLoop()
+          noLoop()
            
        }
 
