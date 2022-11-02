@@ -5,30 +5,32 @@ body {
     flex-direction: column;
     font-family: sans-serif;
 
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
 
-  
+h1{
+
+    font-size: 60;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-/* Flashlight Overlay */
-.back {
-    cursor: none;
-    --cursorX: 50vw;
-    --cursorY: 50vh;
-  }
-  .back:before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    pointer-events: none;
-    background: radial-gradient(
-      circle 10vmax at var(--cursorX) var(--cursorY),
-      rgba(0,0,0,0) 0%,
-      rgba(0,0,0,.5) 80%,
-      rgba(0,0,0,.95) 100%
-    )
-  }
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  
+
+
+ 
 
 
