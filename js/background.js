@@ -1,5 +1,6 @@
 const counter1 = document.getElementById('counter');
 
+
 class Background {
 	constructor(){
 		this.backgroundImage
@@ -28,7 +29,7 @@ class Background {
 		
 
 		counter1.innerText  = Math.floor(frameCount*2);
-	 
+		
 
 
 		}

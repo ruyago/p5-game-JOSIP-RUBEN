@@ -11,7 +11,7 @@ let img9;
 let img10;
 let img11;
 let finish;
-let mySoundBus;
+let gameOver;
 
 
 class Bus {
@@ -20,7 +20,7 @@ class Bus {
         this.y = 0
         this.speed = Math.random()*7+1
         this.x = 400
-        //this.mySoundBus
+        this.gameOver
     
 		
 
@@ -41,7 +41,7 @@ class Bus {
         img10 = loadImage('https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg')
         img11 = loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_Qatar_%283-2%29.svg/1024px-Flag_of_Qatar_%283-2%29.svg.png')
         finish = loadImage('https://cloudinary.fifa.com/transform/11efbf28-c08e-4a13-958f-78685fbb8a80/Qatar-2022-s-32-teams-graphic?tx=c_fill,ar_1.78,g_auto,q_auto,w_1455')
-       // this.mySoundBus = loadSound('../assets/background/car.mp3');
+        this.gameOver = loadSound('../assets/background/gameOver.mp3');
 
 		
 		}
@@ -58,21 +58,24 @@ class Bus {
         // reset 
         if (this.y >= 900) {
             this.y = 1  
-            this.speed = Math.random()*6 +1
+            this.speed = Math.random()*12 +1
         }
        
 
-        if (dist(this.x, this.y, game.car.x, game.car.y) < 25){
+        if (dist(this.x, this.y, game.car.x, game.car.y) < 85){
           
             
            // game.car.mySoundBus.play()
+           strokeWeight(33)
             ellipse(450, 400, 500, 500)
-            strokeWeight(33)
             textSize(72);
             textFont('Georgia');
             text('GAME OVER', 230, 420);
-            
             noLoop()
+            resultLose.innerText  = `You still need ${7146 - frameCount} Km to arrive Qatar. 
+            Try it again.` 
+            game.bus.gameOver.play()
+            
            
        }
 
@@ -193,12 +196,10 @@ class Bus {
        if (counter1.innerText > 7146){
 
         image(finish, 0, 0, 900, 900);
-        /*ellipse(450, 400, 500, 500)
-        strokeWeight(33)
-        textSize(72);
-        textFont('Georgia');
-        text('World Cup', 230, 420);*/
         noLoop()
+        resultLose.innerText  = `CONGRATULATIONS!! 
+        You have arrived. 
+        Enjoy the World Cup` 
 	 }
 
      

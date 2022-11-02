@@ -24,6 +24,7 @@ class Car {
             game.car.mySound.play()
             
         }
+       
 
     }
 

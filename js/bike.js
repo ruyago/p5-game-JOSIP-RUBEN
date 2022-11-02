@@ -1,4 +1,4 @@
-
+const resultLose = document.getElementById('resultLose');
 class Bike {
 	constructor(){
 		this.bike
@@ -28,19 +28,20 @@ class Bike {
         // reset 
        if (this.y >= 900) {
         this.y = 1;
-        this.speed = Math.random()*6 + 1
+        this.speed = Math.random()*8 + 3
                          
         }
         
-        if (dist(this.x, this.y, game.car.x, game.car.y) < 25){
+        if (dist(this.x, this.y, game.car.x, game.car.y) < 85){
 
-            ellipse(450, 400, 500, 500)
             strokeWeight(33)
+            ellipse(450, 400, 500, 500)
             textSize(72);
             textFont('Georgia');
             text('GAME OVER', 230, 420);
              noLoop()
-        
+            resultLose.innerText  = `You still need ${7146 - frameCount} Km to arrive Qatar.
+            Try it again.` 
         
         }
        /* if (counter1.innerText == 7000){

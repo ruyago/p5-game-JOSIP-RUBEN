@@ -27,27 +27,30 @@ class Truck {
         // reset 
         if (this.y >= 900) {
         this.y = 1;
-        this.speed = Math.random()*6 + 1
+        this.speed = Math.random()*8 + 1
                          
         }
 
-       if (dist(this.x, this.y, game.car.x, game.car.y) < 25){
+       if (dist(this.x, this.y, game.car.x, game.car.y) < 113){
+         strokeWeight(33)
         ellipse(450, 400, 500, 500)
-            strokeWeight(33)
             textSize(72);
             textFont('Georgia');
             text('GAME OVER', 230, 420);
-          //noLoop()
+          noLoop()
+          resultLose.innerText  = `You still need ${7146 - frameCount} Km to arrive Qatar. 
+          Try it again.` 
+          
         }
 
-        if (counter1.innerText == 7000){
+       /* if (counter1.innerText == 7000){
             ellipse(450, 400, 500, 500)
             strokeWeight(33)
             textSize(72);
             textFont('Georgia');
             text('World Cup', 230, 420);
             //noLoop()
-         }
+         }*/
 }
 
 }
