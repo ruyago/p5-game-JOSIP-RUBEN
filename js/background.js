@@ -10,7 +10,7 @@ class Background {
 	}
 
 	preload() {
-		this.backgroundImage = loadImage("../assets/background/road.png")
+		this.backgroundImage = loadImage("../assets/background/road2.png")
 		
 		}
 

@@ -72,7 +72,7 @@ class Bus {
             textFont('Georgia');
             text('GAME OVER', 230, 420);
             noLoop()
-            resultLose.innerText  = `You still need ${7146 - frameCount} Km to arrive in Qatar. 
+            resultLose.innerText  = `You still need ${7146 - (frameCount*3)} Km to arrive in Qatar. 
             Try it again.
 
             Spain => France => Slovenia => Croatia => Serbia => Bulgaria => Turkey => Syria => Jordania => South Arabia => QATAR` 
