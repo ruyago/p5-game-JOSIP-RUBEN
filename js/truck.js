@@ -3,10 +3,7 @@ class Truck {
 		this.truck
         this.y = 0
         this.speed = Math.random()*7
-        this.x = 220
-        
-       
-		
+        this.x = 220	
 
 	}
 
@@ -42,15 +39,6 @@ class Truck {
           Try it again.` 
           
         }
-
-       /* if (counter1.innerText == 7000){
-            ellipse(450, 400, 500, 500)
-            strokeWeight(33)
-            textSize(72);
-            textFont('Georgia');
-            text('World Cup', 230, 420);
-            //noLoop()
-         }*/
 }
 
 }

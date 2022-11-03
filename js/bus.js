@@ -188,10 +188,7 @@ class Bus {
                                                 image(img11, 800, 800, 100, 50);
                                                 }   
 
-                                                 
-
-      //  if (counter1.innerText > 70){
-           // ellipse(50, 50, 900, 900)}
+                                
 
        if (counter1.innerText > 7146){
 
@@ -200,16 +197,9 @@ class Bus {
         resultLose.innerText  = `CONGRATULATIONS!! 
         You have arrived. 
         Enjoy the World Cup` 
-	 }
-
-     
-    
-    
+	 }  
     
     }
-
-  
-
 
     }
 

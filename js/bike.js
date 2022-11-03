@@ -4,18 +4,14 @@ class Bike {
 		this.bike
         this.y = 0
         this.speed = Math.random()*5
-        this.x = 600
-     
-	
+        this.x = 600	
 
 	}
 
 	preload() {
 
 		this.bike = loadImage("../assets/background/bike.png")
-       
-  
-		
+       		
 		}
 
     
@@ -44,14 +40,6 @@ class Bike {
             Try it again.` 
         
         }
-       /* if (counter1.innerText == 7000){
-            ellipse(450, 400, 500, 500)
-            strokeWeight(33)
-            textSize(72);
-            textFont('Georgia');
-            text('World Cup', 230, 420);
-            //noLoop()
-         }*/
 }
 
 
