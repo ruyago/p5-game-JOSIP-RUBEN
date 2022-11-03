@@ -25,7 +25,7 @@ class Bike {
         // reset 
        if (this.y >= 900) {
         this.y = 1;
-        this.speed = Math.random()*6 + 3
+        this.speed = Math.random()*6 + 4
                          
         }
         

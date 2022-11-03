@@ -58,7 +58,7 @@ class Bus {
         // reset 
         if (this.y >= 900) {
             this.y = 1  
-            this.speed = Math.random()*9 +1
+            this.speed = Math.random()*9 +3
         }
        
 
