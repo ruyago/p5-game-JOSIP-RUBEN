@@ -58,7 +58,7 @@ class Bus {
         // reset 
         if (this.y >= 900) {
             this.y = 1  
-            this.speed = Math.random()*12 +1
+            this.speed = Math.random()*9 +1
         }
        
 
@@ -72,10 +72,12 @@ class Bus {
             textFont('Georgia');
             text('GAME OVER', 230, 420);
             noLoop()
-            resultLose.innerText  = `You still need ${7146 - frameCount} Km to arrive Qatar. 
-            Try it again.` 
+            resultLose.innerText  = `You still need ${7146 - frameCount} Km to arrive in Qatar. 
+            Try it again.
+
+            Spain => France => Slovenia => Croatia => Serbia => Bulgaria => Turkey => Syria => Jordania => South Arabia => QATAR` 
             game.bus.gameOver.play()
-            
+    
            
        }
 

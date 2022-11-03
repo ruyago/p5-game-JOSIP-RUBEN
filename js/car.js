@@ -19,12 +19,6 @@ class Car {
 		image(this.carImage, this.x , this.y , 90, 130)
 
         
-        if (keyCode === 39) {
-            console.log("right")
-            game.car.mySound.play()
-            
-        }
-       
 
     }
 
@@ -57,6 +51,7 @@ function keyPressed() {
     if (keyCode === 39) {
         console.log("right")
         game.car.moveRight()
+        game.soundTrack.play()
         
     }
 

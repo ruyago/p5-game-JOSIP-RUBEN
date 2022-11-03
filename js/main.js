@@ -1,4 +1,8 @@
 let game = new Game()
+let soundTrack = document.getElementsById(soundTrack)
+let pause2 = true;
+ 
+ 
 
 function setup() {
     createCanvas(900, 900);
@@ -23,4 +27,18 @@ function setup() {
    
 
  }
+ function startGame() {
+location.reload()
+ }
  
+function update(){
+
+   if(!pause2) return}
+
+function mousePressed(){
+console.log(pause2)
+   pause2 = !pause2
+}
+
+
+

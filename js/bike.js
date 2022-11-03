@@ -3,15 +3,16 @@ class Bike {
 	constructor(){
 		this.bike
         this.y = 0
-        this.speed = Math.random()*5
-        this.x = 600	
+        this.speed = Math.random()*4
+        this.x = 600
+        this.gameOver3	
 
 	}
 
 	preload() {
 
 		this.bike = loadImage("../assets/background/bike.png")
-       		
+        this.gameOver3 = loadSound('../assets/background/gameOver.mp3');	
 		}
 
     
@@ -24,7 +25,7 @@ class Bike {
         // reset 
        if (this.y >= 900) {
         this.y = 1;
-        this.speed = Math.random()*8 + 3
+        this.speed = Math.random()*6 + 3
                          
         }
         
@@ -36,9 +37,11 @@ class Bike {
             textFont('Georgia');
             text('GAME OVER', 230, 420);
              noLoop()
-            resultLose.innerText  = `You still need ${7146 - frameCount} Km to arrive Qatar.
-            Try it again.` 
-        
+            resultLose.innerText  = `You still need ${7146 - frameCount} Km to arrive in Qatar.
+            Try it again.
+            
+            Spain => France => Slovenia => Croatia => Serbia => Bulgaria => Turkey => Syria => Jordania => South Arabia => QATAR` 
+            game.bike.gameOver3.play()
         }
 }
 
