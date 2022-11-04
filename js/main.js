@@ -1,3 +1,4 @@
+
 let game = new Game()
 let soundTrack = document.getElementsById(soundTrack)
 let pause2 = true;
@@ -31,14 +32,6 @@ function setup() {
 location.reload()
  }
  
-function update(){
-
-   if(!pause2) return}
-
-function mousePressed(){
-console.log(pause2)
-   pause2 = !pause2
-}
 
 
 
