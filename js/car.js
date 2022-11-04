@@ -10,8 +10,8 @@ class Car {
 	}
 
 	preload() {
-		this.carImage = loadImage("../assets/background/car.png")
-        this.mySound = loadSound('../assets/background/car.mp3');
+		this.carImage = loadImage("./assets/background/car.png")
+        this.mySound = loadSound('./assets/background/car2.mp3');
 		
 		}
 

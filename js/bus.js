@@ -28,7 +28,7 @@ class Bus {
 
 	preload() {
 
-		this.bus = loadImage("../assets/background/bus.png")
+		this.bus = loadImage("./assets/background/bus.png")
         img = loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/200px-Bandera_de_Espa%C3%B1a.svg.png')
         img2 = loadImage('https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg')
         img3 = loadImage('https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg')
@@ -41,7 +41,7 @@ class Bus {
         img10 = loadImage('https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg')
         img11 = loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_Qatar_%283-2%29.svg/1024px-Flag_of_Qatar_%283-2%29.svg.png')
         finish = loadImage('https://cloudinary.fifa.com/transform/11efbf28-c08e-4a13-958f-78685fbb8a80/Qatar-2022-s-32-teams-graphic?tx=c_fill,ar_1.78,g_auto,q_auto,w_1455')
-        this.gameOver = loadSound('../assets/background/gameOver.mp3');
+        this.gameOver = loadSound('./assets/background/gameOver.mp3');
 
 		
 		}

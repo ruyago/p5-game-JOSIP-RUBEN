@@ -9,8 +9,8 @@ class Truck {
 
 	preload() {
 
-		this.truck = loadImage("../assets/background/truck.png")
-    this.gameOver2 = loadSound('../assets/background/gameOver.mp3');
+		this.truck = loadImage("./assets/background/truck.png")
+    this.gameOver2 = loadSound('./assets/background/gameOver.mp3');
 		
 		}
 

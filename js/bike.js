@@ -11,8 +11,8 @@ class Bike {
 
 	preload() {
 
-		this.bike = loadImage("../assets/background/bike.png")
-        this.gameOver3 = loadSound('../assets/background/gameOver.mp3');	
+		this.bike = loadImage("./assets/background/bike.png")
+        this.gameOver3 = loadSound('./assets/background/gameOver.mp3');	
 		}
 
     
